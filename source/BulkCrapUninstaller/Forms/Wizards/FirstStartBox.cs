@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
@@ -57,22 +57,13 @@ namespace BulkCrapUninstaller.Forms
             _settings.BindControl(checkBoxUpdateSearch, x => x.MiscCheckForUpdates, this);
             _settings.BindControl(checkBoxRatings, x => x.MiscUserRatings, this);
 
-            comboBoxLanguage.Items.Add(Localisable.DefaultLanguage);
-            foreach (var languageCode in CultureConfigurator.SupportedLanguages.OrderBy(x => x.DisplayName))
-            {
-                comboBoxLanguage.Items.Add(new ComboBoxWrapper<CultureInfo>(languageCode, x => x.DisplayName));
-            }
+           // Language selection removed
+           p1languageHeading.Visible = false;
+           p1languageDesc.Visible = false;
+           p1languageExtradetails.Visible = false;
+           comboBoxLanguage.Visible = false;
+           buttonLanguageApply.Visible = false;
 
-            var selectedItem = comboBoxLanguage.Items.OfType<ComboBoxWrapper<CultureInfo>>()
-                .FirstOrDefault(x => x.WrappedObject.Name.Equals(_settings.Settings.Language));
-            if (selectedItem != null)
-            {
-                comboBoxLanguage.SelectedItem = selectedItem;
-            }
-            else
-            {
-                comboBoxLanguage.SelectedIndex = 0;
-            }
 
             _settings.SendUpdates(this);
 
@@ -81,12 +72,6 @@ namespace BulkCrapUninstaller.Forms
 
         private void buttonLanguageApply_Click(object sender, EventArgs e)
         {
-            _settings.Settings.Language = comboBoxLanguage.SelectedIndex == 0 ? string.Empty :
-                ((ComboBoxWrapper<CultureInfo>)comboBoxLanguage.SelectedItem).WrappedObject.Name;
-
-            _settings.Settings.Save();
-
-            EntryPoint.Restart();
         }
 
         private void buttonNext_Click(object sender, EventArgs e)

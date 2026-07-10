@@ -80,32 +80,15 @@ VersionInfoTextVersion={#MyAppVersion}
 
 [Languages]
 Name: "en"; MessagesFile: "compiler:Default.isl"
-Name: "fr"; MessagesFile: "compiler:Languages\French.isl"
-Name: "pl"; MessagesFile: "compiler:Languages\Polish.isl"
-Name: "de"; MessagesFile: "compiler:Languages\German.isl"
-Name: "sl"; MessagesFile: "compiler:Languages\Slovenian.isl"
-Name: "nl"; MessagesFile: "compiler:Languages\Dutch.isl"
-Name: "es"; MessagesFile: "compiler:Languages\Spanish.isl"
-Name: "bpt"; MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
-Name: "ru"; MessagesFile: "compiler:Languages\Russian.isl"
-Name: "it"; MessagesFile: "compiler:Languages\Italian.isl"
-Name: "hu"; MessagesFile: "compiler:Languages\Hungarian.isl"
-Name: "tr"; MessagesFile: "compiler:Languages\Turkish.isl"
-Name: "vi"; MessagesFile: "lang\Vietnamese.isl"
-Name: "hi"; MessagesFile: "lang\Hindi.isl"
-Name: "zh_cn"; MessagesFile: "lang\ChineseSimplified.isl"
 
 [Components]
 Name: "main"; Description: "{cm:MainFiles}"; Types: full compact custom; Flags: fixed
-Name: "lang"; Description: "{cm:ExtraLanguages}"; Types: full
 
 [Files]
 #ifdef Light
 
 ; Need to do this to separate the language resource folders from main app file
 Source: "{#InputDir}\*";                DestDir: "{app}\";          Components: main; Flags: ignoreversion recursesubdirs; Excludes: "CleanLogs.bat,\??\*,\??-??\*,\??-????\*";
-; If installing languages, copy everything
-Source: "{#InputDir}\*";                DestDir: "{app}\";          Components: lang; Flags: ignoreversion recursesubdirs; Excludes: "CleanLogs.bat";
 
 #else 
 
@@ -118,9 +101,7 @@ Source: "{#InputDir}\win-x64\Resources\*";      DestDir: "{app}\win-x64\Resource
 Source: "{#InputDir}\win-x86\*";                DestDir: "{app}\win-x86";           Components: main; Flags: ignoreversion; Excludes: "CleanLogs.bat"; Check: not Is64BitInstallMode or IsPortable
 Source: "{#InputDir}\win-x86\Resources\*";      DestDir: "{app}\win-x86\Resources"; Components: main; Flags: ignoreversion recursesubdirs;             Check: not Is64BitInstallMode or IsPortable
 
-; If installing languages, copy everything
-Source: "{#InputDir}\win-x64\*";                DestDir: "{app}\win-x64"; Components: lang; Flags: ignoreversion recursesubdirs; Excludes: "CleanLogs.bat"; Check: Is64BitInstallMode or IsPortable
-Source: "{#InputDir}\win-x86\*";                DestDir: "{app}\win-x86"; Components: lang; Flags: ignoreversion recursesubdirs; Excludes: "CleanLogs.bat"; Check: not Is64BitInstallMode or IsPortable
+
 
 ; Only copy the cleaning script if installing as portable
 Source: "{#InputDir}\win-x64\CleanLogs.bat";    DestDir: "{app}\win-x64"; Components: main; Flags: ignoreversion; Check: IsPortable

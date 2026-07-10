@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
@@ -80,12 +80,9 @@ namespace BulkCrapUninstaller.Forms
             }
             _settings.Subscribe(DoubleClickSettingChanged, x => x.UninstallerListDoubleClickAction, this);
 
-            comboBoxLanguage.Items.Add(Localisable.DefaultLanguage);
-            foreach (var languageCode in CultureConfigurator.SupportedLanguages.OrderBy(x => x.DisplayName))
-            {
-                comboBoxLanguage.Items.Add(new ComboBoxWrapper<CultureInfo>(languageCode, x => x.DisplayName));
-            }
-            _settings.Subscribe(LanguageSettingChanged, x => x.Language, this);
+           // Language settings removed
+           groupBoxLanguage.Visible = false;
+
 
             _settings.Subscribe(BackupSettingChanged, x => x.BackupLeftovers, this);
             _settings.BindProperty(directorySelectBoxBackup,
@@ -124,16 +121,6 @@ namespace BulkCrapUninstaller.Forms
 
         private void comboBoxLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBoxLanguage.SelectedItem is ComboBoxWrapper<CultureInfo> wrapper)
-            {
-                _settings.Settings.Language = wrapper.WrappedObject.Name;
-                _restartNeeded = true;
-            }
-            else if (comboBoxLanguage.SelectedItem is string)
-            {
-                _settings.Settings.Language = string.Empty;
-                _restartNeeded = true;
-            }
         }
 
         private void comboBoxRestore_SelectedIndexChanged(object sender, EventArgs e)
@@ -156,17 +143,6 @@ namespace BulkCrapUninstaller.Forms
 
         private void LanguageSettingChanged(object sender, SettingChangedEventArgs<string> args)
         {
-            if (!string.IsNullOrEmpty(args.NewValue))
-            {
-                var selectedItem = comboBoxLanguage.Items.OfType<ComboBoxWrapper<CultureInfo>>()
-                    .FirstOrDefault(x => x.WrappedObject.Name.Equals(args.NewValue));
-                if (selectedItem != null)
-                {
-                    comboBoxLanguage.SelectedItem = selectedItem;
-                    return;
-                }
-            }
-            comboBoxLanguage.SelectedIndex = 0;
         }
 
         private void RestoreSettingChanged(object sender, SettingChangedEventArgs<YesNoAsk> args)
