@@ -1,7 +1,7 @@
 name: CI
 
 permissions:
-  contents: read
+  contents: write
 on: 
   push:
     branches:
@@ -35,3 +35,18 @@ jobs:
       with:
         name: ${{ github.event.repository.name }}_${{ github.sha }}
         path: bin\publish
+
+    - name: Compress Release
+      if: github.ref == 'refs/heads/main'
+      run: Compress-Archive -Path "bin\publish\*" -DestinationPath "OmniCleanPC-v6.0.${{ github.run_number }}.zip"
+
+    - name: Create Release
+      if: github.ref == 'refs/heads/main'
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: v6.0.${{ github.run_number }}
+        name: OmniClean PC v6.0.${{ github.run_number }}
+        draft: false
+        prerelease: false
+        generate_release_notes: true
+        files: OmniCleanPC-v6.0.${{ github.run_number }}.zip
