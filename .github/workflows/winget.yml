@@ -17,3 +17,4 @@ jobs:
           identifier: Klocman.BulkCrapUninstaller
           version: ${{ steps.get-version.outputs.version }}
           token: ${{ secrets.WINGET_TOKEN }}
+          
