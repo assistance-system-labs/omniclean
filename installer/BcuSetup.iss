@@ -15,7 +15,7 @@
 #define MyAppCopyright     "Copyright " + CurrentYear + " " + MyAppPublisher
 
 #ifdef Light
-#define InputDir           "..\bin\publish-AnyCPU-net8.0"
+#define InputDir           "..\bin\publish"
 #define MainExePath        InputDir+'\'+MyAppExeName
 ; Downloading net8 is only necessary in light mode
 #include "CodeDependencies.iss"

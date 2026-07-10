@@ -40,6 +40,10 @@ jobs:
       if: github.ref == 'refs/heads/main'
       run: Compress-Archive -Path "bin\publish\*" -DestinationPath "OmniCleanPC-v6.0.${{ github.run_number }}.zip"
 
+    - name: Build Installer
+      run: '& "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" installer\BcuSetup.iss'
+      shell: powershell
+
     - name: Create Release
       if: github.ref == 'refs/heads/main'
       uses: softprops/action-gh-release@v2
@@ -49,4 +53,6 @@ jobs:
         draft: false
         prerelease: false
         generate_release_notes: true
-        files: OmniCleanPC-v6.0.${{ github.run_number }}.zip
+        files: |
+          OmniCleanPC-v6.0.${{ github.run_number }}.zip
+          installer\Output\*.exe
