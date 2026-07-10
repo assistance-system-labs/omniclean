@@ -1,9 +1,4 @@
-/*
-    Copyright (c) 2017 Marcin Szeniak (https://github.com/Klocman/)
-    Apache License Version 2.0
-*/
-
-namespace Klocman.Tools
+﻿namespace Klocman.Tools
 {
     public enum SymbolicLinkType
     {

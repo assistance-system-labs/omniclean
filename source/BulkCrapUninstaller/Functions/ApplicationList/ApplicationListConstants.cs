@@ -1,9 +1,4 @@
-/*
-    Copyright (c) 2017 Marcin Szeniak (https://github.com/Klocman/)
-    Apache License Version 2.0
-*/
-
-using System.Drawing;
+﻿using System.Drawing;
 using BulkCrapUninstaller.Properties;
 using Klocman.Resources;
 using UninstallTools;
@@ -103,3 +98,4 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
         }
     }
 }
+

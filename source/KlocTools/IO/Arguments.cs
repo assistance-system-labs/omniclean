@@ -1,9 +1,4 @@
-﻿/*
-    Copyright (c) 2017 Marcin Szeniak (https://github.com/Klocman/)
-    Apache License Version 2.0
-*/
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
@@ -216,3 +211,4 @@ namespace Klocman.IO
         public Collection<string> this[string parameter] => _parameters.ContainsKey(parameter) ? _parameters[parameter] : null;
     }
 }
+

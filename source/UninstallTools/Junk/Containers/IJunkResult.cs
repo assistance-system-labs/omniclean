@@ -1,9 +1,4 @@
-/*
-    Copyright (c) 2017 Marcin Szeniak (https://github.com/Klocman/)
-    Apache License Version 2.0
-*/
-
-using UninstallTools.Junk.Confidence;
+﻿using UninstallTools.Junk.Confidence;
 
 namespace UninstallTools.Junk.Containers
 {

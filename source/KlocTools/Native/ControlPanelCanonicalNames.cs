@@ -1,9 +1,4 @@
-/*
-    Copyright (c) 2017 Marcin Szeniak (https://github.com/Klocman/)
-    Apache License Version 2.0
-*/
-
-namespace Klocman.Native
+﻿namespace Klocman.Native
 {
     /// <summary>
     ///     Canonical names of control panel applets. Add "Microsoft." before them to get full canonical names.

@@ -1,9 +1,4 @@
-/*
-    Copyright (c) 2019 Marcin Szeniak (https://github.com/Klocman/)
-    Apache License Version 2.0
-*/
-
-using System;
+﻿using System;
 
 namespace UninstallTools.Factory.InfoAdders
 {
@@ -38,3 +33,4 @@ namespace UninstallTools.Factory.InfoAdders
         public InfoAdderPriority Priority { get; } = InfoAdderPriority.Normal;
     }
 }
+

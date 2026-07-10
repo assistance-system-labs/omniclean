@@ -1,9 +1,4 @@
-﻿/*
-    Copyright (c) 2017 Marcin Szeniak (https://github.com/Klocman/)
-    Apache License Version 2.0
-*/
-
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Net;
 using System.Net.Http;
@@ -186,3 +181,4 @@ namespace BulkCrapUninstaller.Functions.Tools
         }
     }
 }
+

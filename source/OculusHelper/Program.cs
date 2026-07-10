@@ -1,9 +1,4 @@
-﻿/*
-    Copyright (c) 2018 Marcin Szeniak (https://github.com/Klocman/)
-    Apache License Version 2.0
-*/
-
-using System;
+﻿using System;
 using System.IO;
 using Klocman;
 using Microsoft.Win32.Interop;

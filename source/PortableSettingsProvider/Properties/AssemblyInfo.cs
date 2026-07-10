@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("PortableSettingsProvider")]
 [assembly: AssemblyDescription("Library that allows saving of .NET settings to a portable file")]
 [assembly: AssemblyConfiguration("Release")]
-[assembly: AssemblyCompany("Marcin Szeniak, HakanL, CodeChimp")]
+[assembly: AssemblyCompany("OmniClean PC Team, HakanL, CodeChimp")]
 [assembly: AssemblyProduct("PortableSettingsProvider")]
 [assembly: AssemblyCopyright("Copyright © 2007")]
 
@@ -30,3 +30,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.2.1")]
+

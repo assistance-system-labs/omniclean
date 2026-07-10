@@ -13,7 +13,7 @@ namespace PortableSettingsProvider
     /// License: The Code Project Open License (CPOL) 1.02
     /// 18 Oct 2007 - CodeChimp - Public VB release
     /// Mar 26, 2016 - HakanL - Converted project to C#, cleanup
-    /// 2010-2018 - Marcin Szeniak - Bugfixes, cleanup, improvements
+    /// 2010-2018 - OmniClean PC Team - Bugfixes, cleanup, improvements
     /// </summary>
     public class PortableSettingsProvider : SettingsProvider
     {
