@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
@@ -605,17 +605,7 @@ namespace BulkCrapUninstaller.Functions
             if (path != null) PremadeDialogs.StartProcessSafely(path);
         }
 
-        public static void DisplayLicense()
-        {
-            var path = GetBundledFilePath(Resources.LicenceFilename);
-            if (path != null) PremadeDialogs.StartProcessSafely(path);
-        }
 
-        public static void DisplayPrivacyPolicy()
-        {
-            var path = GetBundledFilePath(Resources.PrivacyPolicyFilename);
-            if (path != null) PremadeDialogs.StartProcessSafely(path);
-        }
 
         public static string GetBundledFilePath(string filename)
         {

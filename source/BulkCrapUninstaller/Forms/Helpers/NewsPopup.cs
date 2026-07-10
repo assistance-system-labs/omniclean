@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using BulkCrapUninstaller.Functions;
 using BulkCrapUninstaller.Properties;
@@ -59,12 +59,10 @@ namespace BulkCrapUninstaller.Forms
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBoxes.DisplayLicense();
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBoxes.DisplayPrivacyPolicy();
         }
 
         private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -1,5 +1,5 @@
 [![GitHub release](https://img.shields.io/github/release/assistance-system-labs/omniclean.svg)](https://github.com/assistance-system-labs/omniclean/releases)
-[![license](https://img.shields.io/github/license/assistance-system-labs/omniclean.svg)](https://github.com/assistance-system-labs/omniclean/blob/master/Licence.txt)
+
 
 # OmniClean PC
 OmniClean PC is a free (as in speech) program uninstaller. It excels at removing large amounts of applications with minimal user input. It can clean up leftovers, detect orphaned applications, run uninstallers according to premade lists, and much more! Even though it was made with IT pros in mind, it can be used by anyone with a basic understanding of how applications are installed/uninstalled in Windows.

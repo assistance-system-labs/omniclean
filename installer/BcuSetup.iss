@@ -1,4 +1,4 @@
-﻿; Tested with innosetup-6.4.3
+; Tested with innosetup-6.4.3
 
 ; Normal: include self-contained binaries for both x86 and x64
 ; Light: include only AnyCPU binaries and automatically download net8 if needed
@@ -57,7 +57,7 @@ SetupIconFile=assets\logo.ico
 
 AllowNoIcons=yes
 DisableDirPage=no
-LicenseFile={#InputDir}\Licence.txt
+
 OutputBaseFilename={#MyAppNameShort}_{#MyAppVersionShort}_setup
 
 Compression=lzma2/ultra

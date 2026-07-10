@@ -16,16 +16,6 @@
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 			<Visible>False</Visible>
 		</Content>
-		<Content Include="..\..\PrivacyPolicy.txt">
-			<Link>PrivacyPolicy.txt</Link>
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-			<Visible>False</Visible>
-		</Content>
-		<Content Include="..\..\Licence.txt">
-			<Link>Licence.txt</Link>
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-			<Visible>False</Visible>
-		</Content>
 		<Content Include="..\..\doc\BCU_manual.html">
 			<Link>BCU_manual.html</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

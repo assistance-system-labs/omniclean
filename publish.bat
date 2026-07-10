@@ -39,8 +39,6 @@ rem call :publish
 copy bin\launcher\BCU-launcher.exe "%publish%\BCUninstaller.exe"
 if errorlevel 1 (echo Failed to copy BCU-launcher.exe & pause & exit /b 1)
 copy "%target%\BCU_manual.html" "%publish%\BCU_manual.html"
-copy "%target%\Licence.txt" "%publish%\Licence.txt"
-copy "%target%\PrivacyPolicy.txt" "%publish%\PrivacyPolicy.txt"
 copy "%target%\NOTICE" "%publish%\NOTICE"
 
 if exist bin\launcher rmdir /q /s bin\launcher
