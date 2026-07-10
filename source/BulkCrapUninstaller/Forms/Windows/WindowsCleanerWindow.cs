@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using UninstallTools.Junk.WindowsCleaner;
 
-namespace BulkCrapUninstaller.Forms.Windows
+namespace BulkCrapUninstaller.Forms
 {
     public class WindowsCleanerWindow : Form
     {
