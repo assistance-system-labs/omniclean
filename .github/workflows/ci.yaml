@@ -28,9 +28,10 @@ jobs:
            /p:PublishProtocol=FileSystem /p:PublishDir="${{ github.workspace }}\bin\publish"
            
     - name: Build launcher
-      run: >
-           msbuild "source\BCU-launcher\BCU-launcher.vcxproj" /t:Build /p:Configuration=Release /p:Platform=Win32 /m /verbosity:minimal
-    
+      run: msbuild "source\BCU-launcher\BCU-launcher.vcxproj" /t:Build /p:Configuration=Release /p:Platform=Win32 /m /verbosity:minimal
+
+    - name: Copy launcher
+      run: copy bin\launcher\BCU-launcher.exe bin\publish\BCUninstaller.exe    
     - uses: actions/upload-artifact@v4
       with:
         name: ${{ github.event.repository.name }}_${{ github.sha }}
