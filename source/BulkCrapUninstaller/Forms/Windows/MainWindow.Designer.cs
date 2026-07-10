@@ -204,6 +204,7 @@ namespace BulkCrapUninstaller.Forms
             toolStripSeparator32 = new ToolStripSeparator();
             takeOwnershipToolStripMenuItem = new ToolStripMenuItem();
             toolsToolStripMenuItem = new ToolStripMenuItem();
+            windowsCleanerToolStripMenuItem = new ToolStripMenuItem();
             openStartupManagerToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator25 = new ToolStripSeparator();
             cleanUpProgramFilesToolStripMenuItem = new ToolStripMenuItem();
@@ -893,7 +894,7 @@ namespace BulkCrapUninstaller.Forms
             // exportDialog
             // 
             exportDialog.DefaultExt = "txt";
-            exportDialog.FileName = "New BCUninstaller Export";
+            exportDialog.FileName = "New OmniClean PC Export";
             resources.ApplyResources(exportDialog, "exportDialog");
             exportDialog.RestoreDirectory = true;
             exportDialog.FileOk += exportDialog_FileOk;
@@ -1396,10 +1397,17 @@ namespace BulkCrapUninstaller.Forms
             // 
             // toolsToolStripMenuItem
             // 
-            toolsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { openStartupManagerToolStripMenuItem, toolStripSeparator25, cleanUpProgramFilesToolStripMenuItem, targetMenuItem, uninstallFromDirectoryToolStripMenuItem, toolStripSeparator13, troubleshootUninstallProblemsToolStripMenuItem, startDiskCleanupToolStripMenuItem, tryToInstallNETV35ToolStripMenuItem, createRestorePointToolStripMenuItem, toolStripSeparator29, openProgramsAndFeaturesToolStripMenuItem, openSystemRestoreToolStripMenuItem, toolStripSeparator19, settingsToolStripMenuItem });
+            toolsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { openStartupManagerToolStripMenuItem, toolStripSeparator25, windowsCleanerToolStripMenuItem, cleanUpProgramFilesToolStripMenuItem, targetMenuItem, uninstallFromDirectoryToolStripMenuItem, toolStripSeparator13, troubleshootUninstallProblemsToolStripMenuItem, startDiskCleanupToolStripMenuItem, tryToInstallNETV35ToolStripMenuItem, createRestorePointToolStripMenuItem, toolStripSeparator29, openProgramsAndFeaturesToolStripMenuItem, openSystemRestoreToolStripMenuItem, toolStripSeparator19, settingsToolStripMenuItem });
             toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             resources.ApplyResources(toolsToolStripMenuItem, "toolsToolStripMenuItem");
             toolsToolStripMenuItem.DropDownOpening += toolsToolStripMenuItem_DropDownOpening;
+            
+            // windowsCleanerToolStripMenuItem
+            // 
+            windowsCleanerToolStripMenuItem.Name = "windowsCleanerToolStripMenuItem";
+            windowsCleanerToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            windowsCleanerToolStripMenuItem.Text = "Windows Cleaner && Debloater...";
+            windowsCleanerToolStripMenuItem.Click += windowsCleanerToolStripMenuItem_Click;
             // 
             // openStartupManagerToolStripMenuItem
             // 
@@ -1734,6 +1742,7 @@ namespace BulkCrapUninstaller.Forms
         private ToolStripStatusLabel toolStripLabelTotal;
         private ToolStripMenuItem displayStatusbarToolStripMenuItem;
         private ToolStripMenuItem toolsToolStripMenuItem;
+        private ToolStripMenuItem windowsCleanerToolStripMenuItem;
         private ToolStripMenuItem openProgramsAndFeaturesToolStripMenuItem;
         private ToolStripSeparator toolStripSeparator13;
         private ToolStripMenuItem manualUninstallToolStripMenuItem1;

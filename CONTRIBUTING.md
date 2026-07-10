@@ -1,4 +1,4 @@
-## How to file a bug report
+﻿## How to file a bug report
 Create a new issue with as much description of the problem as possible. Include steps needed for reproduction if the bug is not obvious.
 It's also possible to submit bug reports anonymously to my [feedback form](http://klocmansoftware.weebly.com/feedback--contact.html).
 
@@ -14,7 +14,7 @@ Translations are stored in .resx files (almost all except for Resources.resx). I
 ### How-to list
 1. Download latest version of the translation tool (ResxTranslator) from https://github.com/HakanL/resxtranslator
 2. - If you are familiar with how git and GitHub works, you can create a branch, translate it, and then start a pull request.
-   - Otherwise download the latest translation pack from the [releases](https://github.com/Klocman/Bulk-Crap-Uninstaller/releases).
+   - Otherwise download the latest translation pack from the [releases](https://github.com/assistance-system-labs/omniclean/releases).
 3. Run the ResxTranslator and click "File > Open directory". Point it to the extracted translation pack or clone of your branch.
 4. Click on any of the items in the left tree, it will open on the right. You will need to translate all of those items, most are quite small.
 5. Put the translation into the column marked with your language's code. For example, if you are translating to German use the "de" column.
@@ -44,3 +44,4 @@ The helpers adapt different kinds of applications into something that BCUninstal
 
 Here's a simplified class diagram of UninstallTools, the place where most of the magic happens:
 ![preview](./doc/SimplifiedClassDiagram.png)
+

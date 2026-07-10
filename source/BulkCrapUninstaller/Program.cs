@@ -1,4 +1,4 @@
-﻿/*
+/*
     Copyright (c) 2017 Marcin Szeniak (https://github.com/Klocman/)
     Apache License Version 2.0
 */
@@ -94,7 +94,7 @@ namespace BulkCrapUninstaller
         /// </summary>
         internal static void PrepareSettings()
         {
-            const string exeName = "BCUninstaller";
+            const string exeName = "OmniCleanPC";
 
             IsAfterUpgrade = false;
             try

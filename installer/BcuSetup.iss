@@ -9,7 +9,7 @@
 #define MyAppName          "BCUninstaller"
 #define MyAppNameShort     "BCUninstaller"
 #define MyAppPublisher     "Marcin Szeniak"
-#define MyAppURL           "https://github.com/Klocman/Bulk-Crap-Uninstaller"
+#define MyAppURL           "https://github.com/assistance-system-labs/omniclean"
 #define MyAppExeName       "BCUninstaller.exe"
 #define CurrentYear        GetDateTimeString('yyyy','','')
 #define MyAppCopyright     "Copyright " + CurrentYear + " " + MyAppPublisher
@@ -260,3 +260,4 @@ vi.ExtraLanguages=Ngôn ngữ bổ sung
 tr.ExtraLanguages=İlave Diller
 zh_cn.ExtraLanguages=其他语言
 hi.ExtraLanguages=अतिरिक्त भाषाएँ
+

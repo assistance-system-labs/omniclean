@@ -1,4 +1,4 @@
-﻿/*
+/*
     Copyright (c) 2017 Marcin Szeniak (https://github.com/Klocman/)
     Apache License Version 2.0
 */
@@ -1507,6 +1507,14 @@ namespace BulkCrapUninstaller.Forms
             OnApplicationListVisibleItemsChanged(sender, e);
 
             filterEditor1.FocusSearchbox();
+        }
+
+        private void windowsCleanerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var cleanerWindow = new WindowsCleanerWindow())
+            {
+                cleanerWindow.ShowDialog(this);
+            }
         }
 
         private void openStartupManagerToolStripMenuItem_Click(object sender, EventArgs e)

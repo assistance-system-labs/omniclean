@@ -1,9 +1,9 @@
-<Project>
+﻿<Project>
 	<PropertyGroup>
 		<Version>6.2</Version>
 
-		<Authors>https://github.com/Klocman/Bulk-Crap-Uninstaller</Authors>
-		<Copyright>Copyright Apache-2.0 © 2026</Copyright>
+		<Authors>https://github.com/assistance-system-labs/omniclean</Authors>
+		<Copyright>Copyright Apache-2.0 Â© 2026</Copyright>
 
 		<Platforms>AnyCPU;x64;x86;ARM64</Platforms>
 		<TargetFramework>net8.0-windows10.0.18362.0</TargetFramework>

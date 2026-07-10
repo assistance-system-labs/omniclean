@@ -161,7 +161,7 @@ namespace BulkCrapUninstaller.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://github.com/Klocman/Bulk-Crap-Uninstaller/discussions.
+        ///   Looks up a localized string similar to https://github.com/assistance-system-labs/omniclean/discussions.
         /// </summary>
         internal static string ContactUrl {
             get {
@@ -278,7 +278,7 @@ namespace BulkCrapUninstaller.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://github.com/Klocman/Bulk-Crap-Uninstaller/issues.
+        ///   Looks up a localized string similar to https://github.com/assistance-system-labs/omniclean/issues.
         /// </summary>
         internal static string GithubIssuesLink {
             get {
@@ -287,7 +287,7 @@ namespace BulkCrapUninstaller.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://github.com/Klocman/Bulk-Crap-Uninstaller.
+        ///   Looks up a localized string similar to https://github.com/assistance-system-labs/omniclean.
         /// </summary>
         internal static string GithubLink {
             get {
@@ -296,7 +296,7 @@ namespace BulkCrapUninstaller.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://github.com/Klocman/Bulk-Crap-Uninstaller/issues/new.
+        ///   Looks up a localized string similar to https://github.com/assistance-system-labs/omniclean/issues/new.
         /// </summary>
         internal static string GithubNewIssueLink {
             get {
@@ -305,7 +305,7 @@ namespace BulkCrapUninstaller.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://github.com/Klocman/Bulk-Crap-Uninstaller/releases.
+        ///   Looks up a localized string similar to https://github.com/assistance-system-labs/omniclean/releases.
         /// </summary>
         internal static string GithubReleasesLink {
             get {
@@ -629,7 +629,7 @@ namespace BulkCrapUninstaller.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://github.com/Klocman/Bulk-Crap-Uninstaller/discussions.
+        ///   Looks up a localized string similar to https://github.com/assistance-system-labs/omniclean/discussions.
         /// </summary>
         internal static string SubmitFeedbackLink {
             get {
@@ -668,7 +668,7 @@ namespace BulkCrapUninstaller.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://github.com/Klocman/Bulk-Crap-Uninstaller/blob/master/CONTRIBUTING.md.
+        ///   Looks up a localized string similar to https://github.com/assistance-system-labs/omniclean/blob/master/CONTRIBUTING.md.
         /// </summary>
         internal static string TranslateLink {
             get {
@@ -706,3 +706,4 @@ namespace BulkCrapUninstaller.Properties {
         }
     }
 }
+
