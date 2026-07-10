@@ -6,11 +6,11 @@
 
 ; =============================================================================
 
-#define MyAppName          "BCUninstaller"
-#define MyAppNameShort     "BCUninstaller"
+#define MyAppName          "OmniClean PC"
+#define MyAppNameShort     "OmniCleanPC"
 #define MyAppPublisher     "OmniClean PC Team"
 #define MyAppURL           "https://github.com/assistance-system-labs/omniclean"
-#define MyAppExeName       "BCUninstaller.exe"
+#define MyAppExeName       "OmniCleanPC.exe"
 #define CurrentYear        GetDateTimeString('yyyy','','')
 #define MyAppCopyright     "Copyright " + CurrentYear + " " + MyAppPublisher
 
